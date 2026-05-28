@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Видалення даних — MedCoach</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; color: #0F6B62; }
+    .meta { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+    a { color: #0F6B62; }
+    .lang-switch { text-align: right; margin-bottom: 16px; }
+    .highlight { 
+      background: #F0F9F7; 
+      border-left: 4px solid #0F6B62;
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 4px;
+    }
+    .email {
+      font-family: monospace;
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <strong>Українська</strong> · <a href="data-deletion-en.html">English</a>
+</div>
+
+<h1>Видалення даних MedCoach</h1>
+<p class="meta">Розробник: Задворний Василь Олександрович (ФОП)</p>
+
+<p>MedCoach дозволяє вам повністю контролювати свої дані. На цій сторінці пояснено як видалити повністю акаунт або окремі категорії даних.</p>
+
+<h2>Способи видалення даних</h2>
+
+<div class="highlight">
+  <strong>📱 У застосунку (рекомендуємо):</strong>
+  <ul>
+    <li><strong>Окремі нагадування:</strong> Свайпни нагадування вліво у списку → "Видалити"</li>
+    <li><strong>Зупинити нагадування (можна відновити):</strong> Відкрий нагадування → "Призупинити"</li>
+    <li><strong>Видалити весь акаунт:</strong> Меню "Ще" → "Видалити акаунт" → подвійне підтвердження</li>
+  </ul>
+</div>
+
+<h2>Запит через email</h2>
+
+<p>Якщо ви хочете видалити дані через email — напишіть на:</p>
+
+<p><span class="email">medbotsupport@gmail.com</span></p>
+
+<p>У листі вкажіть:</p>
+<ul>
+  <li><strong>Тема:</strong> "Запит на видалення даних MedCoach"</li>
+  <li><strong>Email акаунту</strong> який треба видалити</li>
+  <li><strong>Що саме видалити:</strong> весь акаунт, або окремі категорії (нагадування, історія AI обробки, статистика)</li>
+</ul>
+
+<p>Ми обробимо запит протягом <strong>30 днів</strong> та надішлемо підтвердження на ваш email.</p>
+
+<h2>Які дані буде видалено</h2>
+
+<p>При повному видаленні акаунту видаляються:</p>
+<ul>
+  <li>Профіль користувача (email, ім'я з Google Sign In)</li>
+  <li>Всі нагадування та їх історія</li>
+  <li>Записи виконання нагадувань (для статистики)</li>
+  <li>Активовані пакети звичок</li>
+  <li>Налаштування додатка</li>
+  <li>Push token пристрою</li>
+  <li>Кредити AI парсингу</li>
+  <li>Метадані запитів до AI (без вмісту самих документів — вони не зберігаються)</li>
+</ul>
+
+<h2>Дані які можуть залишатись тимчасово</h2>
+
+<ul>
+  <li><strong>Резервні копії бази даних</strong> зберігаються до 30 днів для аварійного відновлення, потім автоматично видаляються</li>
+  <li><strong>Логи сервера</strong> зберігаються до 14 днів для діагностики (містять тільки IP та timestamp, без вмісту запитів)</li>
+</ul>
+
+<p>Після 30 днів від моменту видалення ваші дані повністю знищуються з усіх систем.</p>
+
+<h2>Дані які не зберігаються взагалі</h2>
+
+<p>Деякі дані обробляються миттєво і не зберігаються на наших серверах:</p>
+<ul>
+  <li>Фотографії рецептів які ви надсилаєте для AI парсингу</li>
+  <li>PDF документи для AI обробки</li>
+  <li>Аудіо записи голосових команд</li>
+</ul>
+
+<p>Ці файли передаються до Google Gemini, обробляються там, повертають результат — і одразу видаляються з нашої системи. Згідно з умовами Gemini API, Google також не використовує їх для тренування моделей.</p>
+
+<h2>Більше деталей</h2>
+
+<p>Повна політика обробки даних — у нашій <a href="privacy.html">Політиці конфіденційності</a>.</p>
+
+<h2>Питання?</h2>
+
+<p>Якщо щось незрозуміло — пишіть на <a href="mailto:medbotsupport@gmail.com">medbotsupport@gmail.com</a>. Відповідаємо протягом 24 годин.</p>
+
+<hr style="margin-top: 48px; border: none; border-top: 1px solid #e5e7eb;">
+<p style="text-align: center; color: #9ca3af; font-size: 12px;">
+  © 2026 MedCoach. Розроблено в Україні 🇺🇦
+</p>
+
+</body>
+</html>
