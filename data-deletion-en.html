@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Deletion — MedCoach</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #1a1a1a;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 20px; margin-top: 32px; color: #0F6B62; }
+    .meta { color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+    a { color: #0F6B62; }
+    .lang-switch { text-align: right; margin-bottom: 16px; }
+    .highlight { 
+      background: #F0F9F7; 
+      border-left: 4px solid #0F6B62;
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 4px;
+    }
+    .email {
+      font-family: monospace;
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="data-deletion.html">Українська</a> · <strong>English</strong>
+</div>
+
+<h1>MedCoach Data Deletion</h1>
+<p class="meta">Developer: Vasyl Zadvornyy (individual entrepreneur)</p>
+
+<p>MedCoach gives you full control over your data. This page explains how to delete your account entirely or specific data categories.</p>
+
+<h2>Ways to delete data</h2>
+
+<div class="highlight">
+  <strong>📱 In the app (recommended):</strong>
+  <ul>
+    <li><strong>Individual reminders:</strong> Swipe reminder left in list → "Delete"</li>
+    <li><strong>Pause reminders (recoverable):</strong> Open reminder → "Pause"</li>
+    <li><strong>Delete entire account:</strong> Menu "More" → "Delete account" → double confirmation</li>
+  </ul>
+</div>
+
+<h2>Request via email</h2>
+
+<p>If you prefer to delete data via email — write to:</p>
+
+<p><span class="email">medbotsupport@gmail.com</span></p>
+
+<p>Include in your email:</p>
+<ul>
+  <li><strong>Subject:</strong> "MedCoach Data Deletion Request"</li>
+  <li><strong>Account email</strong> to be deleted</li>
+  <li><strong>What to delete:</strong> entire account, or specific categories (reminders, AI processing history, statistics)</li>
+</ul>
+
+<p>We will process your request within <strong>30 days</strong> and send confirmation to your email.</p>
+
+<h2>What data will be deleted</h2>
+
+<p>When deleting entire account, we remove:</p>
+<ul>
+  <li>User profile (email, name from Google Sign In)</li>
+  <li>All reminders and their history</li>
+  <li>Reminder completion records (for statistics)</li>
+  <li>Activated habit packs</li>
+  <li>App settings</li>
+  <li>Device push token</li>
+  <li>AI parsing credits</li>
+  <li>AI request metadata (without document contents — those are never stored)</li>
+</ul>
+
+<h2>Data that may remain temporarily</h2>
+
+<ul>
+  <li><strong>Database backups</strong> are retained for up to 30 days for disaster recovery, then automatically deleted</li>
+  <li><strong>Server logs</strong> are kept for up to 14 days for diagnostics (contain only IP and timestamp, no request content)</li>
+</ul>
+
+<p>After 30 days from deletion, your data is fully destroyed from all systems.</p>
+
+<h2>Data that is never stored</h2>
+
+<p>Some data is processed instantly and never stored on our servers:</p>
+<ul>
+  <li>Prescription photos you send for AI parsing</li>
+  <li>PDF documents for AI processing</li>
+  <li>Voice recording transcripts</li>
+</ul>
+
+<p>These files are sent to Google Gemini, processed there, return a result — and are immediately discarded from our system. Per Gemini API terms, Google also does not use them for model training.</p>
+
+<h2>More details</h2>
+
+<p>Full data processing policy — in our <a href="privacy-en.html">Privacy Policy</a>.</p>
+
+<h2>Questions?</h2>
+
+<p>If something is unclear — write to <a href="mailto:medbotsupport@gmail.com">medbotsupport@gmail.com</a>. We respond within 24 hours.</p>
+
+<hr style="margin-top: 48px; border: none; border-top: 1px solid #e5e7eb;">
+<p style="text-align: center; color: #9ca3af; font-size: 12px;">
+  © 2026 MedCoach. Made in Ukraine 🇺🇦
+</p>
+
+</body>
+</html>
